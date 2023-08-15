@@ -1,0 +1,416 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#slink{
+    font-size: 25px;
+    padding: 0px 5px 5px 5px;
+    
+}
+.imp ul li a{
+    text-decoration-line: none;
+    color:  white;
+    font-size: 16px;
+}
+
+
+.com a{
+    text-decoration-line: none;
+    color: white;
+}
+
+
+.container{
+    
+    box-sizing: border-box;
+    width: 100%;
+}
+.headerp{
+    padding: 0px 70px;
+    height: 50px;
+    background: #04BCFF;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.headerp h5{
+    margin: 5px 0px 0px 10px;
+}
+.hmenu{
+    display: none;
+}
+
+.slink ul{
+    padding-top: 25px;
+    
+}
+.slink ul li{
+    display: inline;
+}
+ 
+.logo{
+
+    margin: 10px 0px 0px 70px;
+    
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    padding: 10px 20px 0px 10px;
+    background: red;
+    border: 2px solid rgb(12, 1, 10);
+    border-top-right-radius: 60px;
+
+
+}
+.hline{
+    
+    background: black;
+    height: 3px;
+    margin: 7px 0px 10px 70px;
+}
+.menubar{
+    position: sticky;
+    top: 0px;
+    height: 40px;
+    background: #04BCFF;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 70px;
+    font-size: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menubar ul li{
+    list-style-type: none;
+    float: left;
+
+}
+.menubar ul li a{
+    text-decoration-line: none;
+    padding: 0px 10px;
+    color: white;
+    font-weight: bold;
+    
+  
+}
+.menubar ul li a:hover{
+    display: block;
+    background: red;
+
+}
+
+#mimage img{
+    object-fit: fill;
+    object-position: right;
+    height: 400px;
+    width: 100%;   
+}
+.ourcourse{
+    color: red;
+    font-weight: bold;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+}
+.course{
+    padding: 5px 0px 0px 70px;
+    height: auto;
+    background: #04BCFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course ul li{
+    float: left;
+    list-style-type: none;
+    width: 30%;
+}
+.course h3{
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+.course p{
+    text-align: justify;
+    padding: 0px 10px 10px 10px;
+}
+.course ul li img{
+    width: 200px;
+    object-fit: cover;
+    height: auto;
+}
+
+.testh3{
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+    color: red;
+    font-weight: bold;
+}
+
+.tes{
+
+    margin-top: 10px;
+    
+    padding: 5px 0px 0px 70px;
+    height: 150px;
+    background: #04BCFF;
+    
+    
+}
+.tes ul{
+  
+    display: flex;
+    align-items: center;
+
+}
+
+.tes ul li{
+    width: 30%;
+display: inline-block;
+    
+
+    
+    
+}
+.tes ul li img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.foot{
+    height: 300px;
+    margin-top: 20px;
+    background: black;
+    color: white;
+    padding: 10px 0px 0px 70px;
+}
+.foot ul{
+    height: 275px;
+    display: flex;
+}
+.foot ul li{
+    display: inline-block;
+    width: 30%;
+}
+.foot ul li h3{
+    text-align: center;
+}
+.foot ul li p{
+    text-align: justify;
+}
+
+
+/* here start media query */
+@media(min-width: 480px) and (max-width: 740px){
+    .headerp{
+        padding-left: 20px;
+    }
+    .course ul li img{
+        width: 150px;
+        height: 100px;
+    }
+    .course{
+        padding: 20px;
+    }
+    .course ul li{
+        width: 33%;
+        font-size: 12px;
+    }
+    #mimage img{
+        height: 300px;
+    
+}
+.menubar{
+    padding-left: 20px;
+    height: 35px;
+    
+}
+.menubar ul{
+font-size: 14px;
+}
+.tes{
+    padding: 20px;
+}
+
+.foot ul {
+    height: 200px;
+}
+.foot{
+    height: 240px;
+    padding: 20px;
+    font-size: 15px;
+}
+.logo{
+    height: 40px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.hline{
+    margin-left: 20px;
+}
+
+
+
+}
+
+.cr{
+    text-align:right;
+    padding-top: 10px;
+}
+
+
+/* media query max width 480px  */
+
+@media  (max-width: 480px){
+    .headerp{
+        padding-bottom: 20px;
+flex-direction: column;
+        height: 60px;
+        text-align: center;
+    }
+    .headerp h5{
+        font-size: 20px;
+    }
+    .headerp ul{
+        padding-top: 15px;
+    }
+    .logo{
+        margin: 5px 0px 3px 0px;
+        font-size: 15px;
+        height: 30px;
+        display: flex;
+        border-top-right-radius: 0px;
+        justify-content: space-around;
+    }
+    .hmenu{
+        display: block;
+    }
+    .menubar{
+        display: none;
+    }
+    .smenu{
+        padding: 5px;
+        height: 130px;
+        line-height: 25px;
+        background-image: linear-gradient(#c2c7c9,transparent);
+        display: block;
+    }
+    .smenu ul li{
+        float: none;
+        display: block;
+    }
+    .smenu ul li a{
+        display: block;
+    }
+    .hline{
+        margin: 5px 0px 5px 0px;
+    }
+    #mimage img{
+        height: 220px;
+    }
+    .course ul li{
+        float: none;
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+    .course{
+        padding: 5%;
+        
+    }
+    .tes{
+        height: auto;
+        padding: 10px 0px 10px 20px;
+    }
+    .tes ul li{
+        font-size: 13px;
+    
+    }
+    .tes ul li img{
+        width: 50px;
+        height: 50px;
+    }
+    .foot{
+        padding: 20px;
+        font-size: 13px;
+    }
+    .foot ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot ul li{ 
+        width: 100%;
+        float: none;
+      
+    
+    }
+    .foot ul li h3{
+        font-size: 15px;
+        text-align: left;
+    }
+   
+
+}
+@media (max-width: 400px){
+    .headerp{
+        display: none;
+    }
+    .tes{
+        text-align: center;
+        
+       
+    }
+    .tes ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .tes ul li{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .tes p{
+        font-size: 16px;
+    }
+    .tes h4{
+        font-size: 20px;
+    }
+    .foot{
+        height: 480px;
+    }
+    .foot ul{
+        height: 420px;
+    }
+    .foot ul li h3{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .foot ul li p{
+        font-size: 16px;
+    }
+    .foot address{
+        font-size: 16px;
+    }
+    
+
+
+}
+
+.imp ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 150px;
+}
+.imp ul li{
+    width: 100%;
+}
+
+
+
+
+
+
+
