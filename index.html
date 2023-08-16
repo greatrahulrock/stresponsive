@@ -45,11 +45,11 @@
 <!-- here start menu section -->
         <div class="menubar" id="menutar">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">COURSE</a></li>
-                <li><a href="">TESTIMONIAL</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
+                <li class="tara"><a href="#">HOME</a></li>
+                <li class="tara"><a href="#ourcourse">COURSE</a></li>
+                <li class="tara"><a href="#testimonial">TESTIMONIAL</a></li>
+                <li class="tara"><a href="#about">ABOUT US</a></li>
+                <li class="tara"><a href="#contact">CONTACT US</a></li>
             </ul>
         </div>
 
@@ -58,7 +58,7 @@
             <img src="bc.jpg" alt="">
         </div>
         <!-- here start our course -->
-        <h3 class="ourcourse">OUR COURSE</h3>
+        <h3 class="ourcourse" id="ourcourse">OUR COURSE</h3>
         <div class="course">
             <ul class="oc">
                 <li>
@@ -79,7 +79,7 @@
             </ul>
         </div>
 <!-- here start testimonial section -->
-<h3 class="testh3">TESTIMONIAL</h3>
+<h3 class="testh3" id="testimonial">TESTIMONIAL</h3>
         <div class="tes">
             <ul class="">
                 <li>
@@ -109,7 +109,7 @@
         </div>
 
         <!-- here start footer section -->
-        <div class="foot">
+        <div class="foot" id="about">
             <ul>
                 <li>
                 <h3>About us</h3>
@@ -149,16 +149,46 @@
                         <br>
                         Address : begusarai bihar
                     </address>
+
                 </li>
             </ul>
-        <h3 class="cr">copyright 2023</h3>
         </div>
     </div>
 
     <script>
         document.getElementById("smenuoption").addEventListener("click",()=>{
             document.getElementById("menutar").classList.toggle("smenu");
-        })
+
+            abc();
+        });
+
+    
+
+        function abc(){
+        var xyz=document.querySelectorAll(".tara").forEach((ev)=>{
+ev.addEventListener('click',()=>{
+document.getElementById('menutar').classList.remove('smenu');
+
+});
+
+        });
+        }
+
+window.addEventListener("scroll",()=>{
+
+    let abc=window.pageYOffset;
+if(abc>=200){
+    document.getElementById("menutar").style.background="red";
+}else{
+    document.getElementById("menutar").style.background='#04BCFF';
+
+}
+});
+        
+ 
+
+
+
     </script>
     
 </body>

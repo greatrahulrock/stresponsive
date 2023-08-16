@@ -96,7 +96,7 @@
 }
 .menubar ul li a:hover{
     display: block;
-    background: red;
+    background: rgb(198, 211, 79);
 
 }
 
@@ -178,14 +178,14 @@ display: inline-block;
     border-radius: 50px;
 }
 .foot{
-    height: 300px;
+    height: auto;
     margin-top: 20px;
     background: black;
     color: white;
     padding: 10px 0px 0px 70px;
 }
 .foot ul{
-    height: 275px;
+    padding-bottom: 0px;
     display: flex;
 }
 .foot ul li{
@@ -200,7 +200,10 @@ display: inline-block;
 }
 
 
+
 /* here start media query */
+
+
 @media(min-width: 480px) and (max-width: 740px){
     .headerp{
         padding-left: 20px;
@@ -222,26 +225,27 @@ display: inline-block;
 }
 .menubar{
     padding-left: 20px;
-    height: 35px;
+    height: 30px;
+    line-height: 30px;
     
 }
 .menubar ul{
-font-size: 14px;
+font-size: 13px;
 }
 .tes{
     padding: 20px;
 }
-
-.foot ul {
-    height: 200px;
-}
 .foot{
-    height: 240px;
-    padding: 20px;
-    font-size: 15px;
+    height: auto;
+    padding-left: 20px;
+    font-size: 12px;
 }
+.foot ul li{
+    padding-left: 5px;
+}
+
 .logo{
-    height: 40px;
+    height: 35px;
     margin-left: 20px;
     font-size: 18px;
 }
@@ -252,12 +256,6 @@ font-size: 14px;
 
 
 }
-
-.cr{
-    text-align:right;
-    padding-top: 10px;
-}
-
 
 /* media query max width 480px  */
 
@@ -275,6 +273,8 @@ flex-direction: column;
         padding-top: 15px;
     }
     .logo{
+        top: 0px;
+        position: sticky;
         margin: 5px 0px 3px 0px;
         font-size: 15px;
         height: 30px;
@@ -289,10 +289,12 @@ flex-direction: column;
         display: none;
     }
     .smenu{
+        background: rgb(10, 119, 146);
+        top: 44px;
+        position: sticky;
         padding: 5px;
         height: 130px;
         line-height: 25px;
-        background-image: linear-gradient(#c2c7c9,transparent);
         display: block;
     }
     .smenu ul li{
@@ -301,6 +303,7 @@ flex-direction: column;
     }
     .smenu ul li a{
         display: block;
+        font-size: 14px;
     }
     .hline{
         margin: 5px 0px 5px 0px;
@@ -351,7 +354,8 @@ flex-direction: column;
    
 
 }
-@media (max-width: 400px){
+@media (max-width: 420px){
+    
     .headerp{
         display: none;
     }
@@ -378,11 +382,9 @@ flex-direction: column;
         font-size: 20px;
     }
     .foot{
-        height: 480px;
+        height: auto;
     }
-    .foot ul{
-        height: 420px;
-    }
+    
     .foot ul li h3{
         font-size: 20px;
         padding-bottom: 15px;
@@ -393,10 +395,30 @@ flex-direction: column;
     .foot address{
         font-size: 16px;
     }
-    
-
 
 }
+
+@media(min-width: 240px) and (max-width: 340px){
+    #mimage img{
+        height : 150px;
+}
+.course ul li img{
+    height:  150px;
+    width: 150px;
+}
+.course h3{
+    font-size: 20px;
+}
+.course p{
+    font-size: 16px;
+}
+.foot address{
+    padding-right: 0px;
+    font-size: 12px;
+}
+    
+}
+
 
 .imp ul{
     display: flex;
